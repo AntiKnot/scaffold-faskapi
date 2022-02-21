@@ -42,6 +42,10 @@ help:
 init:
 	pip install fastapi
 	pip install "uvicorn[standard]"
+	pip install python-multipart
+	pip install pydantic[email]
+	pip install apscheduler
+	pip install celery
 	pre-commit install
 	pre-commit autoupdate
 	mkdir -p tests
